@@ -22,6 +22,56 @@ h1{
 }
 .desna_kolona{
 	width:34%;
-	background-color:#A2B964;
+	background-color:#A2B964;	
+}
+#aladin{
+	width:100%;
+}
+.zelena_crta{
+	background-image:url("images/rbg.png");
+	background-repeat:repeat;
+	overflow:auto;
+	margin-bottom:1rem;
+}
+#tomato{
+	float:left;
+}
+#ocena{
+	color:red;
+	font-size:48pt;
+}
+.comments{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+.quotebubble{
+	font-size:13pt;
+	font-family:Georgia,'Times New Roman', Times, serif;
+	/*justify-content:center;*/
+	/*justify: center;*/
+	width:90%;
+	background-color: #FFFFFF;
+	border:2px solid #CCCCCC;
+	border-radius: 12px;
+	/*padding:1em;*/
 	
+}
+.quotebubble img{
+	margin-right:5px;
+	/*margin-bottom:5px; */
+}
+
+.persona{
+	font-size:13pt;
+	font-family:Georgia,'Times New Roman',Times,serif;
+	width:90%;
+	margin-top:-5px;
+}
+.persona img {
+	margin-bottom:5px;
+	margin-right:5px;
+}
+.publication{
+	font-style:italic;
 }
