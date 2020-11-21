@@ -1,3 +1,4 @@
+
 .navbar {
       margin-bottom: 0;
       border-radius: 0;
@@ -15,11 +16,72 @@
 
 	padding-top: 50px;
 }
+#h1{
+	background-color:yellow;
+	text-align:center;
+	font-family: "Lucida Console", Courier, monospace;
+	
+}
+#o_nama{
+	font-weight:bold;
+}
+#p{
+	background-color:cyan;
+	font-weight:bold;
+}
 
-footer {
+#left {
     background-color: #555;
     color: white;
     padding: 15px;
     text-align: left;
 }
+#right{
+	background-color: #555;
+    color: white;
+    padding: 10px;
+    text-align: right;
+	font-size:50px;
+	
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.row{
+	text-align:center;
+}
 
+.col-md-5{
+	font-weight:bold;
+	font-style: italic;
+	font-size:15px;
+}
+.social{
+	margin:0.5em;
+	font-style: italic;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}

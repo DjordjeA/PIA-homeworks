@@ -7,6 +7,8 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   	<link rel="stylesheet" href="pizzeriaDjole.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -26,19 +28,14 @@
 
 	<div class="container-fluid text-center" style="background-color: #f1f1f1;">    
   		<div class="row content">
-    		<div class="col-md-2 sidenav">
-
-      			<p><a href="#o_nama">O nama</a></p>
-      			<p><a href="#meni">Meni</a></p>
-      			<p><a href="#kontakt">Kontakt</a></p>
-
-    		</div>
-    
-    		<div class="col-md-10 text-left" style="background-color: white;"> 
-      			<h1>Dobrodosli u piceriju kod Djoleta!</h1>
+   
+    		<div class="col-md-10"> 
+      			<h1 id="h1">Dobrodosli u piceriju kod Djoleta!</h1>
       			<h2 id="o_nama">O nama</h2>
-      			<p style="font-size: 15pt;">tralalallalalalallallallalallallalalallalallallalalla
-				    laaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+      			<p id="p" style="font-size: 15pt;">PICERIJA DJOLE JE TU DA VAM PRUZI UKUS KAKAV DO SAD NISTE OSETILI,
+				VELIKI IZBOR RAZNOVRSNIH PICA MOZETE PRONACI UPRAVO KOD NAS, ZATO BRZO DO VASE NAJBLIZE LOKACIJE,
+				U VASU OMILJENU PICERIJU KOD DJOLETA, JER KADA NAS JEDNOM POSETITE POSTACEMO VASE OMILJENO MESTO.
+				</p>
 
       			<hr>
       			
@@ -47,32 +44,59 @@
 
       			<div class="row">
       				<div class="col-md-5">
-      					<img src="images/pizza.jfif" class="img-thumbnail">
+      					<img src="images/pizza1.jpg" class="img-thumbnail">
       					
       					
       				</div>
 
       				<div class="col-md-5">
-      					<p>Pizaa</p>
-      					<p>neke informacije</p>
-      					<p>sastojci</p>
+      					<p>MARGARITA</p>
+      					<p>PUNJENA KORICA TOPLJENIM KACKAVALJEM</p>
+      					<p>PELAT,SLANINICA,CAJNA KOBASICA</p>
+						
 
 
       				</div>
+					<div class="dropdown">
+						<button class="dropbtn">
+							<form method="get" action="/page2">
+								<button type="submit">IZBOR VELICINE I CENA</button>
+							</form>
+						</button>
+					<div class="dropdown-content">
+						<a href="#">NARUCI</a>					
+					</div>
+  </div>
     			
     			</div>
 
 
     			<div class="row">
       				<div class="col-md-5">
-      					<img src="images/pizza2.jfif" class="img-thumbnail">
+      					<img src="images/pizza2.jpg" class="img-thumbnail">
       					
       				</div>
 
       				<div class="col-md-5">
-      					<p>Pizaa2</p>
-      					<p>neke informacije</p>
-      					<p>sastojci</p>
+      					<p>SPECIJALE</p>
+      					<p>PO SPECIJALNOM RECEPTU</p>
+      					<p>PELAT,PECENICA,SUNKA,ZELENA SALATA,ROTKVICA</p>
+
+
+      				</div>
+    			
+    			</div>
+				<div class="row">
+      				<div class="col-md-5">
+      					<img src="images/pizza3.jpg" class="img-thumbnail">
+      					
+      					
+      				</div>
+
+      				<div class="col-md-5">
+      					<p>SERBIANA</p>
+      					<p>STA RECI SEM PRAVA SRPSKA</p>
+      					<p>PELAT,KACKAVALJ,PECURKE,SUNKA</p>
 
 
       				</div>
@@ -85,14 +109,21 @@
 
 
 
-<footer class="container-fluid">
+<footer class="container-fluid" id="left">
   	<h3 id="kontakt">Kontakt</h3>
   	<hr>
     <p>Telefon: 55165164</p>
-    <p>Email: blabla@gmail.com</p>
-    <p>Instagram: @pizzeria_kod_djoleta</p>
+    <p>Email: pizzeria_djole@gmail.com</p>
 </footer>
+<footer class="container-fluid" id="right">
+	<p class="social"> DRUSTVENE MREZE </p>
+  	<a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+	<a href="#" class="fa fa-linkedin"></a>
+	<a href="#" class="fa fa-pinterest"></a>
+	<a href="#" class="fa fa-instagram"></a>
 
+</footer>
 </body>
 
 
