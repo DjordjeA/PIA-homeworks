@@ -18,7 +18,7 @@
 			<div class="navbar-header">
 				<a href="#" class="navbar-brand">Pizzeria kod Djoleta</a>
 			</div>
-			<ul class="nav navbar-nav" style="float: right;">
+			<ul class="nav navbar-nav" style="float:right;">
 				<li><a href="#o_nama">O nama</a></li>
 				<li><a href="#meni">Meni</a></li>
 				<li><a href="#kontakt"> Kontakt</a></li>
@@ -35,60 +35,58 @@
       			<p id="p" style="font-size: 15pt;">PICERIJA DJOLE JE TU DA VAM PRUZI UKUS KAKAV DO SAD NISTE OSETILI,
 				VELIKI IZBOR RAZNOVRSNIH PICA MOZETE PRONACI UPRAVO KOD NAS, ZATO BRZO DO VASE NAJBLIZE LOKACIJE,
 				U VASU OMILJENU PICERIJU KOD DJOLETA, JER KADA NAS JEDNOM POSETITE POSTACEMO VASE OMILJENO MESTO.
-				</p>
-
-      			<hr>
-      			
-
-      			<h3 id="meni">Meni</h3>
-
-      			<div class="row">
-      				<div class="col-md-5">
-      					<img src="images/pizza1.jpg" class="img-thumbnail">
-      					
-      					
-      				</div>
-
-      				<div class="col-md-5">
-      					<p>MARGARITA</p>
-      					<p>PUNJENA KORICA TOPLJENIM KACKAVALJEM</p>
-      					<p>PELAT,SLANINICA,CAJNA KOBASICA</p>
-						
-
-
-      				</div>
-					<div class="dropdown">
-						<button class="dropbtn">
-							<form method="get" action="/page2">
-								<button type="submit">IZBOR VELICINE I CENA</button>
-							</form>
-						</button>
-					<div class="dropdown-content">
-						<a href="#">NARUCI</a>					
-					</div>
-  </div>
-    			
+				</p>         			
+      			<h3 id="meni"><b>MENI</b></h3>       			
     			</div>
 
 
     			<div class="row">
       				<div class="col-md-5">
-      					<img src="images/pizza2.jpg" class="img-thumbnail">
+      					<img src="images/pizza2.jpg">
       					
       				</div>
 
-      				<div class="col-md-5">
-      					<p>SPECIJALE</p>
+      				<div class="col-md-5" >
+      					<p>SPECIALE</p>
       					<p>PO SPECIJALNOM RECEPTU</p>
       					<p>PELAT,PECENICA,SUNKA,ZELENA SALATA,ROTKVICA</p>
+						<p><b><<=============================</p>
 
 
       				</div>
+					<div class="body_2">
+                      <form class="form-left" action="/action_page.php">
+						<label>VELICINA I CENA:</label>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio1">
+                          <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">25cm cena:500 DIN
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio2">
+                          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">40cm, cena:950 DIN
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio3">
+                          <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">55cm, cena:1550 DIN
+                        </label>
+                      </div>
+                      </form>
+                      <form class="kolicina" action="/action_page.php">
+                        <label for="quantity">KOLICINA:</label><br>
+                        <input type="number" id="quantity" name="quantity" min="1" max="20" value="1">
+						<div class="body_3">                   
+							<button type="button" class="btn btn-success">NARUCI</button>                   
+						</div>
+                      </form>
+                  </div>
+				  
     			
     			</div>
 				<div class="row">
       				<div class="col-md-5">
-      					<img src="images/pizza3.jpg" class="img-thumbnail">
+      					<img src="images/pizza3.jpg">
       					
       					
       				</div>
@@ -97,23 +95,174 @@
       					<p>SERBIANA</p>
       					<p>STA RECI SEM PRAVA SRPSKA</p>
       					<p>PELAT,KACKAVALJ,PECURKE,SUNKA</p>
-
-
+						<p><b><<=============================</p>
       				</div>
+					<div class="body_2">
+                      <form class="form-left" action="/action_page.php">
+						<label>VELICINA I CENA:</label>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio1">
+                          <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">25cm, cena:500 DIN
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio2">
+                          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">40cm, cena:950 DIN
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio3">
+                          <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">55cm, cena:1550 DIN
+                        </label>
+                      </div>
+                      </form>
+                      <form class="kolicina" action="/action_page.php">
+                        <label for="quantity">KOLICINA:</label><br>
+                        <input type="number" id="quantity" name="quantity" min="1" max="20" value="1">
+						<div class="body_3">                   
+							<button type="button" class="btn btn-success">NARUCI</button>                   
+						</div>
+                      </form>
+                  </div>
     			
     			</div>
+				<div class="row">
+      				<div class="col-md-5">
+      					<img src="images/pizza4.jpg">
+      					
+      					
+      				</div>
+
+      				<div class="col-md-5">
+      					<p>DOMACCI</p>
+      					<p>LEGENDARNA DOMACA</p>
+      					<p>CRNE MASLINE,PAPRICICE,SLANINA,MOCARELA</p>
+						<p><b><<=============================</p>
+      				</div>
+					<div class="body_2">
+                      <form class="form-left" action="/action_page.php">
+						<label>VELICINA I CENA:</label>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio1">
+                          <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">25cm, cena:520 DIN
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio2">
+                          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">40cm, cena:980 DIN
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio3">
+                          <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">55cm, cena:1560 DIN
+                        </label>
+                      </div>
+                      </form>
+                      <form class="kolicina" action="/action_page.php">
+                        <label for="quantity">KOLICINA:</label><br>
+                        <input type="number" id="quantity" name="quantity" min="1" max="20" value="1">
+						<div class="body_3">                   
+							<button type="button" class="btn btn-success">NARUCI</button>                   
+						</div>
+                      </form>
+                  </div>
+    			
+    			</div>
+				<div class="row">
+      				<div class="col-md-5">
+      					<img src="images/pizza5.jpg">
+      					
+      					
+      				</div>
+
+      				<div class="col-md-5">
+      					<p>TOSCANNA</p>
+      					<p>PO STAROM RECEPTU IZ TOSKANE</p>
+      					<p>CRNE MASLINE,ZELENE LJUTE PAPRICICE,PUNJENE KORICE,KOMADICI MLEVENOG MESA,MOCARELA</p>
+						<p><b><<=============================</p>
+      				</div>
+					<div class="body_2">
+                      <form class="form-left" action="/action_page.php">
+						<label>VELICINA I CENA:</label>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio1">
+                          <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">25cm, cena:520 DIN
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio2">
+                          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">40cm, cena:980 DIN
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio3">
+                          <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">55cm, cena:1560 DIN
+                        </label>
+                      </div>
+                      </form>
+                      <form class="kolicina" action="/action_page.php">
+                        <label for="quantity">KOLICINA:</label><br>
+                        <input type="number" id="quantity" name="quantity" min="1" max="20" value="1">
+						<div class="body_3">                   
+							<button type="button" class="btn btn-success">NARUCI</button>                   
+						</div>
+                      </form>
+                  </div>
+    			
+    			</div>
+				<div class="row">
+      				<div class="col-md-5">
+      					<img src="images/pizza1.jpg">
+      				</div>
+
+      				<div class="col-md-5">
+      					<p>DELISIOSO</p>
+      					<p>PUNJENA KORICA TOPLJENIM KACKAVALJEM</p>
+      					<p>PELAT,SLANINICA,CAJNA KOBASICA,SOS DELISIOSO</p>
+						<p><b><<=============================</p>
+						
+      				</div>
+					<div class="body_2">
+                      <form class="form-left" action="/action_page.php">
+						<label>VELICINA I CENA:</label>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio1">
+                          <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">25cm, cena:450 DIN
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio2">
+                          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">40cm, cena:900 DIN
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="radio3">
+                          <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">55cm, cena:1500 DIN
+                        </label>
+                      </div>
+                      </form>
+                      <form class="kolicina" action="/action_page.php">
+                        <label for="quantity">KOLICINA:</label><br>
+                        <input type="number" id="quantity" name="quantity" min="1" max="20" value="1">
+						<div class="body_3">                   
+							<button type="button" class="btn btn-success">NARUCI</button>                   
+						</div>
+                      </form>
+                  </div>
+				  
+					
+				</div>
 
   </div>
 </div>
 
-
-
-
 <footer class="container-fluid" id="left">
-  	<h3 id="kontakt">Kontakt</h3>
-  	<hr>
+  	<h3 id="kontakt"><i>KONTAKT</i></h3>
+  	
     <p>Telefon: 55165164</p>
     <p>Email: pizzeria_djole@gmail.com</p>
+	<p>Adresa: Jovana Trpkovica 39/4</p>
+	<p>Radno Vreme: 24/7 </p>
 </footer>
 <footer class="container-fluid" id="right">
 	<p class="social"> DRUSTVENE MREZE </p>
