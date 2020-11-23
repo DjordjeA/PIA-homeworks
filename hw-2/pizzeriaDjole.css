@@ -1,6 +1,7 @@
-.col-md-10{
-	text-align:center;
+body{
+	background-image:url(images/back.jpg);
 }
+
 .navbar {
       margin-bottom: 0;
       border-radius: 0;
@@ -9,7 +10,6 @@
 
 .sidenav {	  
       padding-top: 20px;
-      background-color: #f1f1f1;
       height: 100%;
     }
 
@@ -17,7 +17,8 @@
 	padding-top: 50px;
 }
 #h1{
-	background-color:yellow;
+	background-color:black;
+	color:white;
 	text-align:center;
 	font-family: "Lucida Console", Courier, monospace;
 	float:center;
@@ -28,7 +29,9 @@
 	text-align:center;
 }
 #p{
-	background-color:cyan;
+	padding:10px;
+	background-color:darkolivegreen;
+	color:white;
 	font-weight:bold;
 }
 
@@ -106,4 +109,8 @@
 }
 #meni{
 	font-size:30px;
+}
+.meni{
+	border:8px double black;
+	padding:10px;
 }
