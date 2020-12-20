@@ -37,3 +37,34 @@ h3{
   gap: 10px;
   margin: 20px 0;
 }
+
+button {
+  --hue: var(--hue-neutral);
+  border: 1px solid grey;
+  background-color: #0e2939;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+
+button:hover {
+  border-color: black;
+}
+
+.start {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 10px 0px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hide {
+  display: none;
+}
