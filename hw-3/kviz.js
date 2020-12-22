@@ -34,9 +34,52 @@ function startGame() {
 function startClock(){
 	countdown.innerHTML="Preostalo vreme: "+timer;
 	if(timer<=0){
-		//game over logicno, dodacu kasnije
+		gameOver();
 	} else{
 		timer-=1;
 		runningTimer = setTimeout(startClock,1000);
 	}
+}
+function gameOver(){
+	clearInterval(runningTimer);
+	countdown.innerHTML="Finished";
+	clearQuestion();
+	showResults();
+	startButton.innerText="Restart";
+	startButton.classList.remove("hide");
+	timer=200;
+	score=0;
+}
+function showResults() {
+  finalScore = timer;
+  if (finalScore < 0) {
+    finalScore = 0;
+  }
+  qElement.innerText = "";
+  scoreArea.classList.remove("hide");
+  answerButtons.classList.add("hide");
+  scoreArea.innerHTML = `Tvoj rezultat je ${finalScore}!<div id="init">Name: <input type="text" name="initials" id="initials" placeholder="Enter Your Name"><button id="save-btn" class="save-btn btn" onclick="submitScores(event)" disabled>Save</button>`;
+  username = document.getElementById("initials");
+  saveButton = document.getElementById("save-btn");
+  username.addEventListener("keyup", function() {
+    saveButton.disabled = !username.value;
+  });
+}
+
+function submitScores(e){
+	const score={
+		score: finalScore,
+		name:username.value
+	};
+	highScores.push(score);
+	highScores.sort((a,b)=>b.score-a.score);
+	highScores.splice(MAX_HIGH_SCORES);
+	
+	localStorage.setItem("highScores", JSON.stringify(highScores));
+	
+}
+function clearScores(){
+	highScores=[];
+	highScoresList.innerHTML="<h3>Rezultati su obrisani</h3>";
+	document.getElementById("clearScores").classList.add("hide");
 }
