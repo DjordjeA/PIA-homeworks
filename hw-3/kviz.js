@@ -24,6 +24,7 @@ function startGame() {
 	scoreArea.classList.add("hide");
 	answerButtons.classList.remove("hide");
 	qNumber=0;
+	qContainer.classList.remove("hide");
 	scoreArea.innerHTML="";
 	startClock();
 	while(answerButtons.firstChild){
@@ -58,7 +59,7 @@ function showResults() {
   qElement.innerText = "";
   scoreArea.classList.remove("hide");
   answerButtons.classList.add("hide");
-  scoreArea.innerHTML = `Tvoj rezultat je ${finalScore}!<div id="init">Name: <input type="text" name="initials" id="initials" placeholder="Enter Your Name"><button id="save-btn" class="save-btn btn" onclick="submitScores(event)" disabled>Save</button>`;
+  scoreArea.innerHTML = `Tvoj rezultat je ${finalScore}!<div id="init">Name: <input type="text" name="initials" id="initials" placeholder="Unesi svoje ime"><button id="save-btn" class="save-btn btn" onclick="submitScores(event)" disabled>Save</button>`;
   username = document.getElementById("initials");
   saveButton = document.getElementById("save-btn");
   username.addEventListener("keyup", function() {
@@ -76,10 +77,62 @@ function submitScores(e){
 	highScores.splice(MAX_HIGH_SCORES);
 	
 	localStorage.setItem("highScores", JSON.stringify(highScores));
-	
+	displayScores();
 }
+function displayScores(){
+	clearInterval(runningTimer);
+	countdown.innerHTML="";
+	clearQuestion();
+	qElement.innerText="";
+	scoreArea.classList.remove("hide");
+	
+	scoreArea.innerHTML = `<h2>Najbolji rezultati</h2><ul id="highScoresList"></ul><button id="clearScores" class="btn" onclick="clearScores()">Obrisi najbolje rezultate</button>`;
+  const highScoresList = document.getElementById("highScoresList");
+  highScoresList.innerHTML = highScores
+    .map(score => {
+      return `<li class="scoresList">${score.name} - ${score.score}</li>`;
+    })
+    .join("");
+  startButton.classList.remove("hide");
+  highScoresButton.classList.add("hide");
+}
+
 function clearScores(){
 	highScores=[];
 	highScoresList.innerHTML="<h3>Rezultati su obrisani</h3>";
 	document.getElementById("clearScores").classList.add("hide");
+}
+function showQuestion(question){
+	qElement.innerText=question.question;
+	question.answers.forEach(answer => {
+		const button = document.createElement("button");
+		button.innerText=answer.text;
+		button.classList.add("btn");
+		if(answer.correct){
+			button.dataset.correct=answer.correct;
+		}
+		button.addEventListener("click", selectAnswer);
+		answerButtons.appendChild(button);
+	});
+}
+function selectAnswer(e) {
+	const selectedButton=e.target;
+	if(!selectedButton.dataset.correct){
+		timer=timer-10;
+		console.log(timer);
+	}
+	if(qNumber==questions.length-1){
+		gameOver();
+	}
+	else{
+		clearQuestion();
+		qNumber++;
+		showQuestion(questions[qNumber]);
+		console.log(score);
+	}
+}
+function clearQuestion(){
+	while(answerButtons.firstChild){
+		answerButtons.removeChild(answerButtons.firstChild);
+	}
 }
