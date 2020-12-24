@@ -1,28 +1,31 @@
-*;;before,
-*::after{
-	box-sizing: border-box;
-	font-family: Gotham Rounded;
-	margin:0;
-	padding:0;
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-	display:flex;
-	width:100vw;
-	height:100vh;
-	justify-content:center;
-	align-items:center;
-	text-align:center;
-	background-color:#68b0d9;
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #68b0d9;
 }
-h3{
-	margin:10px 0px
+
+h3 {
+  margin: 10px 0px;
 }
+
 .mainHeader {
   padding-bottom: 0.3rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid grey;
 }
+
 .quizArea {
   width: 60vw;
   max-width: 90%;
@@ -31,6 +34,7 @@ h3{
   padding: 10px;
   box-shadow: 0 0 10px 2px;
 }
+
 .buttonArea {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -65,6 +69,43 @@ button:hover {
   align-items: center;
   flex-direction: column;
 }
+
 .hide {
   display: none;
 }
+
+.scoresList {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0.3rem 0;
+}
+
+#highScoresList {
+  margin: 1rem 0;
+}
+
+#scoreArea {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid grey;
+}
+#timerArea {
+	vertical-align:top;
+	float:right;
+	position:relative;
+}
+
+#init {
+  margin-top: 0.7rem;
+}
+#initials {
+  margin: 0.3rem;
+}
+
+#save-btn {
+  margin: 0.7rem;
+}
+
+#showScoresButton {
+  margin-top: 0.3rem;
+}
+

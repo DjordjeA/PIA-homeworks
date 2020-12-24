@@ -136,3 +136,49 @@ function clearQuestion(){
 		answerButtons.removeChild(answerButtons.firstChild);
 	}
 }
+const questions = [
+  {
+    question: "Ko je najbolji teniser sveta?",
+    answers: [
+      { text: "Rafael Nadal", correct: false },
+      { text: "Novak Djokovic", correct: true },
+      { text: "Dominik Tim", correct: false },
+      { text: "Aleksandar Zverev", correct: false }
+    ]
+  },
+  {
+    question: "Ko je najtrofejniji trener KK Partizan?",
+    answers: [
+      { text: "Zeljko Obradovic", correct: false },
+      { text: "Dusan Ivkovic", correct: false },
+      { text: "Andrea Trinkijeri", correct: false },
+      { text: "Dusko Vujosevic", correct: true }
+    ]
+  },
+  {
+    question: "FK Crvena Zvezda je 3 puta osvajao Ligu Sampiona.",
+    answers: [
+      { text: "Istina", correct: false },
+      { text: "Laz", correct: true }
+    ]
+  },
+  {
+    question: "Najvise golova u istoriji za FK Barselonu je postigao:",
+    answers: [
+      { text: "Ronaldinjo", correct: false },
+      { text: "Luis Suarez", correct: false },
+      { text: "Lionel Mesi", correct: true },
+      { text: "Samjuel Eto'o", correct: false }
+    ]
+  },
+  {
+    question: "Srpski kosarkas Nikola Jokic je rodjen u kom nasem gradu?",
+    answers: [
+      { text: "Sombor", correct: true },
+      { text: "Beograd", correct: false },
+      { text: "Krusevac", correct: false },
+      { text: "Kragujevac", correct: false }
+    ]
+  }
+]
+
