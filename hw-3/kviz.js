@@ -179,6 +179,65 @@ const questions = [
       { text: "Krusevac", correct: false },
       { text: "Kragujevac", correct: false }
     ]
-  }
+  },
+  {
+    question: "Koji klub je osvojio Englesku Premijer ligu za sezonu 2019/2020?",
+    answers: [
+      { text: "Totenhem", correct: false },
+      { text: "Aston Vila", correct: false },
+      { text: "Mancester Junajted", correct: false },
+      { text: "Liverpul", correct: true }
+    ]
+  },
+  {
+    question: "Najbolji igrac po izboru FIFE za 2020. godinu je?",
+    answers: [
+      { text: "Kristijano Ronaldo", correct: false },
+      { text: "Kilijan Mbape", correct: false },
+      { text: "Robert Levandovski", correct: true },
+      { text: "Lionel Mesi", correct: false }
+    ]
+  },
+  {
+    question: "Najbolji kosarkas u NBA svih vremena je:",
+    answers: [
+      { text: "Majkl Dzordan", correct: true },
+      { text: "Hakim Olajdzuvon", correct: false },
+      { text: "Medzik Dzonson", correct: false },
+      { text: "Lebron Dzejms", correct: false }
+    ]
+  },
+  {
+    question: "Novak Djokovic je prvu gren slem titulu osvojio 2008. godine.",
+    answers: [
+      { text: "Istina", correct: true },
+      { text: "Laz", correct: false }
+    ]
+  },
+  {
+    question: "Jedina reprezentacija koga je Srbija pobedila na SP u fudbalu 2010. godine je:",
+    answers: [
+      { text: "Danska", correct: false },
+      { text: "Austrija", correct: false },
+      { text: "Nemacka", correct: true },
+      { text: "Portugalija", correct: false }
+    ]
+  },
+  {
+    question: "Sasa Djordjevic je osvojio srebrnu medalju na Svetskom prvenstvu u kosarci sa reprezentacijom Srbije kao trener.",
+    answers: [
+      { text: "Istina", correct: true },
+      { text: "Laz", correct: false }
+    ]
+  },
+  {
+  question: "Reprezentacija Srbije U20 je osvojila svetsko prvenstvo u fudbalu na Novom Zelnadu koje godine?",
+    answers: [
+      { text: "2013", correct: false },
+      { text: "2014", correct: false },
+      { text: "2015", correct: true },
+      { text: "2016", correct: false }
+    ]
+  },
 ]
 
