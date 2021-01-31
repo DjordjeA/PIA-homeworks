@@ -43,8 +43,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($nameLength < 3) {
         echo "Ime filma mora se sastojati iz bar 3 karaktera. <br>";
         header("Refresh:2; addmovie.php");
-    } else if ($inputYear < 1890 || $inputYear > 2100) {
-        echo "Godina mora biti izmedju 1890-2100. <br>";
+    } else if ($inputYear < 1890 || $inputYear > 2021) {
+        echo "Godina mora biti izmedju 1890-2021. <br>";
         header("Refresh:2; addmovie.php");
     } else {
 
